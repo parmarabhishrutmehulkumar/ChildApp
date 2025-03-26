@@ -1,0 +1,141 @@
+#MainRegister{
+    background-color: #ffffff;
+    width: 1182px;
+    height: 547px;
+    position: fixed;
+    margin-top: -275px;
+}
+
+#MainSectionInRegister{
+    width: 500px;
+    height: 520px;
+    background-color: #ffffff;
+    border-radius: 2%;
+    margin-top: 15px;
+    margin-left: 340px;
+    position: relative;
+    box-shadow: 0px 0px 6px rgba(57, 53, 53, 5);
+}
+
+.curved-edge1InRegister{
+    height: 120px;
+    background: #FFC2A5;
+    clip-path: ellipse(75% 100% at 35% 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+  
+
+.giraffeInRegister{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    margin-left: 145px;
+    margin-top: -110px;
+}
+
+.btn1InRegister{
+    margin-top: 200px;
+}
+
+.btn2InRegister{
+    margin-top: 240px;
+}
+
+.btn1InRegister,.btn2InRegister{
+    width: 150px;
+    height: 30px;
+    background-color: #5962A7;
+    margin-left: 175px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #ffffff;
+    padding-top: 4px;
+    z-index: 3;
+    position: absolute;
+}
+
+.CaterpillarInRegister{
+    position: absolute;
+    transform: scaleX(-1);
+    width: 70px;
+    height: 50px;
+    margin-top: 175px;
+    margin-left: 145px;
+    z-index: 3;
+}
+
+.BeeInRegister{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    margin-top: 240px;
+    margin-left: 310px;
+    z-index: 3;
+}
+
+.line1InRegister{
+    width: 200px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 20px;
+}
+
+.text1InRegister{
+    position: absolute;
+    margin-top: -109px;
+    margin-left: 245px;
+    font-size: 10px;
+    color: #000;
+}
+
+.line2InRegister{
+    width: 200px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 280px;
+}
+
+.socialMedia1InRegister,.socialMedia2InRegister{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 175px;
+}
+
+.socialMedia2InRegister{
+    margin-left: 285px;
+}
+
+.googleInRegister{
+    width: 25px;
+    height: 25px;
+    margin: 8px;
+}
+
+.facebookInRegister{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.curved-edge2InRegister{
+    height: 52px;
+    background: #FFC6F4;
+    padding-bottom: 70px;
+    mask: radial-gradient(100% 0px at bottom,#0000 98%,#000);
+    clip-path: ellipse(60% 100% at bottom);
+    position: relative;
+    margin-top: 278px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
