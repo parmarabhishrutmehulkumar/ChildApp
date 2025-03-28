@@ -1,141 +1,152 @@
-#MainRegister{
-    background-color: #ffffff;
-    width: 1182px;
-    height: 547px;
-    position: fixed;
-    margin-top: -275px;
+#MainRegister {
+  background-color: #ffffff;
+  width: 1182px;
+  height: 547px;
+  position: fixed;
+  margin-top: -275px;
+  overflow: hidden;
 }
 
-#MainSectionInRegister{
-    width: 500px;
-    height: 520px;
-    background-color: #ffffff;
-    border-radius: 2%;
-    margin-top: 15px;
-    margin-left: 340px;
-    position: relative;
-    box-shadow: 0px 0px 6px rgba(57, 53, 53, 5);
+/* Main Sign-Up Section */
+#MainSectionInRegister {
+  width: 500px;
+  height: 520px;
+  background-color: #ffffff;
+  border-radius: 2%;
+  margin-top: 15px;
+  margin-left: 340px;
+  position: relative;
+  box-shadow: 0px 0px 6px rgba(57, 53, 53, 5);
 }
 
-.curved-edge1InRegister{
-    height: 120px;
-    background: #FFC2A5;
-    clip-path: ellipse(75% 100% at 35% 0);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    position: relative;
-}
-  
-
-.giraffeInRegister{
-    position: absolute;
-    width: 200px;
-    height: 300px;
-    margin-left: 145px;
-    margin-top: -110px;
+/* Curved Top Edge */
+.curved-edge1InRegister {
+  height: 120px;
+  background: #FFC2A5;
+  clip-path: ellipse(75% 100% at 35% 0);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
 }
 
-.btn1InRegister{
-    margin-top: 200px;
+/* Giraffe Image */
+.giraffeInRegister {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  margin-left: 145px;
+  margin-top: -110px;
 }
 
-.btn2InRegister{
-    margin-top: 240px;
+/* Buttons */
+.btn1InRegister, .btn2InRegister {
+  width: 150px;
+  height: 30px;
+  background-color: #5962A7;
+  margin-left: 175px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #ffffff;
+  padding-top: 4px;
+  z-index: 3;
+  position: absolute;
 }
 
-.btn1InRegister,.btn2InRegister{
-    width: 150px;
-    height: 30px;
-    background-color: #5962A7;
-    margin-left: 175px;
-    border-radius: 20px;
-    text-align: center;
-    font-weight: 900;
-    color: #ffffff;
-    padding-top: 4px;
-    z-index: 3;
-    position: absolute;
+.btn1InRegister { margin-top: 200px; }
+.btn2InRegister { margin-top: 240px; }
+
+/* Caterpillar & Bee */
+.CaterpillarInRegister {
+  position: absolute;
+  transform: scaleX(-1);
+  width: 70px;
+  height: 50px;
+  margin-top: 175px;
+  margin-left: 145px;
+  z-index: 3;
 }
 
-.CaterpillarInRegister{
-    position: absolute;
-    transform: scaleX(-1);
-    width: 70px;
-    height: 50px;
-    margin-top: 175px;
-    margin-left: 145px;
-    z-index: 3;
+.BeeInRegister {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  margin-top: 240px;
+  margin-left: 310px;
+  z-index: 3;
 }
 
-.BeeInRegister{
-    position: absolute;
-    width: 30px;
-    height: 20px;
-    margin-top: 240px;
-    margin-left: 310px;
-    z-index: 3;
+/* OR Line */
+.line1InRegister, .line2InRegister {
+  width: 200px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  margin-top: -100px;
 }
 
-.line1InRegister{
-    width: 200px;
-    height: 1px;
-    background-color: #000;
-    position: absolute;
-    margin-top: -100px;
-    margin-left: 20px;
+.line1InRegister { margin-left: 20px; }
+.text1InRegister {
+  position: absolute;
+  margin-top: -109px;
+  margin-left: 245px;
+  font-size: 10px;
+  color: #000;
+}
+.line2InRegister { margin-left: 280px; }
+
+/* Social Media */
+.socialMedia1InRegister, .socialMedia2InRegister {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  position: absolute;
+  margin-top: -70px;
 }
 
-.text1InRegister{
-    position: absolute;
-    margin-top: -109px;
-    margin-left: 245px;
-    font-size: 10px;
-    color: #000;
+.socialMedia1InRegister { margin-left: 175px; }
+.socialMedia2InRegister { margin-left: 285px; }
+
+.googleInRegister { width: 25px; height: 25px; margin: 8px; }
+.facebookInRegister { width: 30px; height: 30px; margin: 5px; }
+
+/* Curved Bottom Edge */
+.curved-edge2InRegister {
+  height: 52px;
+  background: #FFC6F4;
+  padding-bottom: 70px;
+  mask: radial-gradient(100% 0px at bottom,#0000 98%,#000);
+  clip-path: ellipse(60% 100% at bottom);
+  position: relative;
+  margin-top: 278px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
-.line2InRegister{
-    width: 200px;
-    height: 1px;
-    background-color: #000;
-    position: absolute;
-    margin-top: -100px;
-    margin-left: 280px;
+/* Blurred Background Marks */
+.blurred-mark {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: -1;
 }
 
-.socialMedia1InRegister,.socialMedia2InRegister{
-    width: 40px;
-    height: 40px;
-    background-color: #fff;
-    border-radius: 12px;
-    position: absolute;
-    margin-top: -70px;
-    margin-left: 175px;
+.red-blur { top: -50px; left: -50px; background: rgba(255, 0, 0, 0.3); }
+.green-blur { top: 10%; right: 10%; background: rgba(0, 255, 0, 0.3); }
+.blue-blur { bottom: 10%; left: 20%; background: rgba(0, 0, 255, 0.3); }
+
+/* Irregular Shapes */
+.irregular-shape {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: #90ee90;
+  clip-path: polygon(30% 0%, 70% 10%, 100% 50%, 80% 90%, 20% 100%, 0% 50%);
+  z-index: -1;
 }
 
-.socialMedia2InRegister{
-    margin-left: 285px;
-}
-
-.googleInRegister{
-    width: 25px;
-    height: 25px;
-    margin: 8px;
-}
-
-.facebookInRegister{
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-}
-
-.curved-edge2InRegister{
-    height: 52px;
-    background: #FFC6F4;
-    padding-bottom: 70px;
-    mask: radial-gradient(100% 0px at bottom,#0000 98%,#000);
-    clip-path: ellipse(60% 100% at bottom);
-    position: relative;
-    margin-top: 278px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
+.shape-1 { top: 20%; left: 10%; }
+.shape-2 { bottom: 5%; right: 20%; background: #ffcc00; }

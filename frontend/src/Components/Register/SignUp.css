@@ -1,0 +1,186 @@
+/* General Container Styling */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at 10% 10%, rgba(255, 0, 0, 0.3), transparent),
+              radial-gradient(circle at 90% 20%, rgba(0, 255, 0, 0.3), transparent),
+              radial-gradient(circle at 30% 80%, rgba(0, 0, 255, 0.3), transparent),
+              radial-gradient(circle at 80% 70%, rgba(255, 255, 0, 0.3), transparent);
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Abstract Blobs */
+.blob {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 0, 0, 0.3);
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.blob-1 { top: -50px; left: -50px; background: rgba(255, 0, 0, 0.3); }
+.blob-2 { top: 30%; right: -100px; background: rgba(0, 255, 0, 0.3); }
+.blob-3 { bottom: 10%; left: 20%; background: rgba(0, 0, 255, 0.3); }
+.blob-4 { bottom: -50px; right: -50px; background: rgba(255, 255, 0, 0.3); }
+
+/* Card Styling */
+.signup-card {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Back Button */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Title */
+.signup-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Styling */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+}
+
+/* Sign Up Button */
+.signup-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #7D78FF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #5b54d4;
+}
+
+.butterfly-icon {
+  width: 20px;
+  height: auto;
+}
+
+/* Bunny Image */
+.bunny-image {
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+}
+/* Blurred Background Marks */
+.blurred-mark {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.red-blur {
+  top: -50px;
+  left: -50px;
+  background: rgba(255, 0, 0, 0.3);
+}
+
+.green-blur {
+  top: 10%;
+  right: 10%;
+  background: rgba(0, 255, 0, 0.3);
+}
+
+.blue-blur {
+  bottom: 10%;
+  left: 20%;
+  background: rgba(0, 0, 255, 0.3);
+}
+
+/* Irregular Shape */
+.irregular-shape {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: #90ee90; /* Light Green */
+  clip-path: polygon(30% 0%, 70% 10%, 100% 50%, 80% 90%, 20% 100%, 0% 50%);
+  z-index: -1;
+}
+
+.shape-1 {
+  top: 20%;
+  left: 10%;
+}
+
+.shape-2 {
+  bottom: 5%;
+  right: 20%;
+  background: #ffcc00; /* Yellow */
+}
+
+/* Ensure the signup-container is positioned correctly */
+.signup-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
