@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion"; // Import Framer Motion
 import "./Register.css";
-import Giraffe from "../../Img/Register/Giraffe.png"; // Replace with the actual path
+import Giraffe from "../../Img/Register/Giraffe.png";
 import Caterpillar from "../../Img/Register/Caterpillar.png";
 import Bee from "../../Img/Register/Bee.png";
 import GoogleIcon from "../../Img/Register/Google.png";
@@ -20,64 +21,133 @@ const Register = () => {
   };
 
   return (
-    <div id="MainRegister">
+    <motion.div 
+      id="MainRegister"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       {/* Blurred Background Elements */}
-      <div className="blurred-mark red-blur"></div>
-      <div className="blurred-mark green-blur"></div>
-      <div className="blurred-mark blue-blur"></div>
+      <motion.div className="blurred-mark red-blur" animate={{ scale: [0.9, 1.1, 1] }} transition={{ duration: 2, repeat: Infinity }} />
+      <motion.div className="blurred-mark green-blur" animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2.5, repeat: Infinity }} />
+      <motion.div className="blurred-mark blue-blur" animate={{ scale: [1, 1.15, 1] }} transition={{ duration: 3, repeat: Infinity }} />
 
       {/* Irregular Shapes */}
       <div className="irregular-shape shape-1"></div>
       <div className="irregular-shape shape-2"></div>
 
-      <div id="MainSectionInRegister">
+      <motion.div 
+        id="MainSectionInRegister"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         {/* Curved Top Edge */}
         <div className="curved-edge1InRegister"></div>
 
-        {/* Giraffe Image */}
-        <img src={Giraffe} alt="Giraffe" className="giraffeInRegister" />
+        {/* Giraffe Image with Animation */}
+        <motion.img 
+          src={Giraffe} 
+          alt="Giraffe" 
+          className="giraffeInRegister"
+          animate={{ y: [0, -10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        />
 
         {/* Form */}
         <form className="signup-form" onSubmit={handleSignUp}>
           <div className="form-group">
             <label htmlFor="username">Username</label>
-            <input type="text" id="username" placeholder="Enter your username" required />
+            <motion.input 
+              type="text" 
+              id="username" 
+              placeholder="Enter your username" 
+              required
+              whileFocus={{ scale: 1.05 }}
+            />
           </div>
           <div className="form-group">
             <label htmlFor="password">Password</label>
-            <input type="password" id="password" placeholder="Enter your password" required />
+            <motion.input 
+              type="password" 
+              id="password" 
+              placeholder="Enter your password" 
+              required
+              whileFocus={{ scale: 1.05 }}
+            />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" required />
+            <motion.input 
+              type="email" 
+              id="email" 
+              placeholder="Enter your email" 
+              required
+              whileFocus={{ scale: 1.05 }}
+            />
           </div>
 
-          <button type="submit" className="btn1InRegister">Sign Up</button>
-          <button type="button" className="btn2InRegister" onClick={handleBack}>
+          <motion.button 
+            type="submit" 
+            className="btn1InRegister"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Sign Up
+          </motion.button>
+
+          <motion.button 
+            type="button" 
+            className="btn2InRegister" 
+            onClick={handleBack}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
             Back
-          </button>
+          </motion.button>
         </form>
 
-        {/* Caterpillar & Bee */}
-        <img src={Caterpillar} alt="Caterpillar" className="CaterpillarInRegister" />
-        <img src={Bee} alt="Bee" className="BeeInRegister" />
+        {/* Caterpillar & Bee Animations */}
+        <motion.img 
+          src={Caterpillar} 
+          alt="Caterpillar" 
+          className="CaterpillarInRegister"
+          animate={{ x: [0, 10, 0] }}
+          transition={{ duration: 3, repeat: Infinity }}
+        />
+        <motion.img 
+          src={Bee} 
+          alt="Bee" 
+          className="BeeInRegister"
+          animate={{ y: [-5, 5, -5] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        />
 
         {/* Social Media Sign-in */}
         <div className="line1InRegister"></div>
         <div className="text1InRegister">OR</div>
         <div className="line2InRegister"></div>
 
-        <div className="socialMedia1InRegister">
+        <motion.div 
+          className="socialMedia1InRegister"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <img src={GoogleIcon} alt="Google" className="googleInRegister" />
-        </div>
-        <div className="socialMedia2InRegister">
+        </motion.div>
+        
+        <motion.div 
+          className="socialMedia2InRegister"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <img src={FacebookIcon} alt="Facebook" className="facebookInRegister" />
-        </div>
+        </motion.div>
 
         {/* Curved Bottom Edge */}
         <div className="curved-edge2InRegister"></div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

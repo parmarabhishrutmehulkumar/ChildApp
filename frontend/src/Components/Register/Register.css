@@ -1,22 +1,27 @@
+/* Main Container */
 #MainRegister {
   background-color: #ffffff;
-  width: 1182px;
-  height: 547px;
-  position: fixed;
-  margin-top: -275px;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   overflow: hidden;
+  padding: 20px; /* Add padding for responsiveness */
+  box-sizing: border-box;
 }
 
 /* Main Sign-Up Section */
 #MainSectionInRegister {
-  width: 500px;
-  height: 520px;
+  width: 90%; /* Make it responsive */
+  max-width: 1200px; /* Broader max width */
   background-color: #ffffff;
-  border-radius: 2%;
-  margin-top: 15px;
-  margin-left: 340px;
+  border-radius: 10px;
+  padding: 40px; /* Increased padding for better spacing */
+  box-shadow: 0px 4px 10px rgba(57, 53, 53, 0.2);
   position: relative;
-  box-shadow: 0px 0px 6px rgba(57, 53, 53, 5);
+  text-align: center;
 }
 
 /* Curved Top Edge */
@@ -26,127 +31,161 @@
   clip-path: ellipse(75% 100% at 35% 0);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  position: relative;
 }
 
 /* Giraffe Image */
 .giraffeInRegister {
-  position: absolute;
-  width: 200px;
-  height: 300px;
-  margin-left: 145px;
-  margin-top: -110px;
+  width: 250px; /* Increased size */
+  height: auto;
+  margin: -70px auto 0;
+  display: block;
 }
 
 /* Buttons */
 .btn1InRegister, .btn2InRegister {
-  width: 150px;
-  height: 30px;
+  width: 90%; /* Make buttons responsive */
+  max-width: 300px; /* Increased max width */
+  height: 50px; /* Slightly taller */
   background-color: #5962A7;
-  margin-left: 175px;
-  border-radius: 20px;
+  border-radius: 25px;
   text-align: center;
-  font-weight: 900;
+  font-weight: 700;
+  font-size: 16px;
   color: #ffffff;
-  padding-top: 4px;
-  z-index: 3;
+  display: block;
+  margin: 15px auto;
+  border: none;
+  cursor: pointer;
+}
+
+.btn1InRegister:hover, .btn2InRegister:hover {
+  background-color: #4a5595;
+}
+
+/* Caterpillar & Bee */
+.CaterpillarInRegister, .BeeInRegister {
   position: absolute;
 }
 
-.btn1InRegister { margin-top: 200px; }
-.btn2InRegister { margin-top: 240px; }
-
-/* Caterpillar & Bee */
 .CaterpillarInRegister {
-  position: absolute;
-  transform: scaleX(-1);
-  width: 70px;
-  height: 50px;
-  margin-top: 175px;
-  margin-left: 145px;
-  z-index: 3;
+  width: 80px; /* Increased size */
+  height: auto;
+  left: 30px;
+  bottom: 40px;
 }
 
 .BeeInRegister {
-  position: absolute;
-  width: 30px;
-  height: 20px;
-  margin-top: 240px;
-  margin-left: 310px;
-  z-index: 3;
+  width: 40px; /* Increased size */
+  height: auto;
+  right: 30px;
+  top: 30px;
 }
 
 /* OR Line */
 .line1InRegister, .line2InRegister {
-  width: 200px;
-  height: 1px;
+  width: 45%;
+  height: 1.5px;
   background-color: #000;
-  position: absolute;
-  margin-top: -100px;
+  display: inline-block;
 }
 
-.line1InRegister { margin-left: 20px; }
 .text1InRegister {
-  position: absolute;
-  margin-top: -109px;
-  margin-left: 245px;
-  font-size: 10px;
+  display: inline-block;
+  margin: 0 12px;
+  font-size: 14px;
+  font-weight: bold;
   color: #000;
 }
-.line2InRegister { margin-left: 280px; }
 
 /* Social Media */
 .socialMedia1InRegister, .socialMedia2InRegister {
-  width: 40px;
-  height: 40px;
+  display: inline-block;
+  width: 60px; /* Increased size */
+  height: 60px;
+  margin: 12px;
+  border-radius: 14px;
   background-color: #fff;
-  border-radius: 12px;
-  position: absolute;
-  margin-top: -70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
-.socialMedia1InRegister { margin-left: 175px; }
-.socialMedia2InRegister { margin-left: 285px; }
-
-.googleInRegister { width: 25px; height: 25px; margin: 8px; }
-.facebookInRegister { width: 30px; height: 30px; margin: 5px; }
+.googleInRegister, .facebookInRegister {
+  width: 35px; /* Increased size */
+  height: auto;
+}
 
 /* Curved Bottom Edge */
 .curved-edge2InRegister {
-  height: 52px;
+  height: 80px; /* Increased height */
   background: #FFC6F4;
-  padding-bottom: 70px;
-  mask: radial-gradient(100% 0px at bottom,#0000 98%,#000);
   clip-path: ellipse(60% 100% at bottom);
-  position: relative;
-  margin-top: 278px;
-  border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* Blurred Background Marks */
 .blurred-mark {
   position: absolute;
-  width: 200px;
+  width: 200px; /* Increased size */
   height: 200px;
-  filter: blur(80px);
+  filter: blur(70px);
   border-radius: 50%;
   z-index: -1;
 }
 
-.red-blur { top: -50px; left: -50px; background: rgba(255, 0, 0, 0.3); }
-.green-blur { top: 10%; right: 10%; background: rgba(0, 255, 0, 0.3); }
-.blue-blur { bottom: 10%; left: 20%; background: rgba(0, 0, 255, 0.3); }
+.red-blur { top: 0; left: 0; background: rgba(255, 0, 0, 0.3); }
+.green-blur { top: 10%; right: 5%; background: rgba(0, 255, 0, 0.3); }
+.blue-blur { bottom: 5%; left: 15%; background: rgba(0, 0, 255, 0.3); }
 
 /* Irregular Shapes */
 .irregular-shape {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 150px; /* Increased size */
+  height: 150px;
   background: #90ee90;
   clip-path: polygon(30% 0%, 70% 10%, 100% 50%, 80% 90%, 20% 100%, 0% 50%);
   z-index: -1;
 }
 
-.shape-1 { top: 20%; left: 10%; }
-.shape-2 { bottom: 5%; right: 20%; background: #ffcc00; }
+.shape-1 { top: 12%; left: 7%; }
+.shape-2 { bottom: 8%; right: 7%; background: #ffcc00; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #MainSectionInRegister {
+    width: 95%; /* Adjust width for smaller screens */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .btn1InRegister, .btn2InRegister {
+    width: 100%; /* Full width buttons */
+  }
+
+  .giraffeInRegister {
+    width: 200px; /* Adjust size */
+  }
+
+  .socialMedia1InRegister, .socialMedia2InRegister {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .giraffeInRegister {
+    width: 150px; /* Further reduce size */
+  }
+
+  .btn1InRegister, .btn2InRegister {
+    font-size: 14px; /* Adjust font size */
+    height: 45px;
+  }
+
+  .socialMedia1InRegister, .socialMedia2InRegister {
+    width: 45px;
+    height: 45px;
+  }
+}
